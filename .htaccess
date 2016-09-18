@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^css/ - [L]
+RewriteRule ^img/ - [L]
+RewriteRule ^js/ - [L]
+
+RewriteRule ^index.php(.*)$ - [L]
+RewriteRule ^(.*)$ /index.php?/$1 [L]
